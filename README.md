@@ -27,9 +27,16 @@ The candidate willreview the code and make _any_ changes to the `src/main` class
 they see fit to make.
 
 This includes, but is not limited to:
+
 - Including any new libraries that would make things easier
 - Changing any of the existing classes
 - Changing the `java` implementation of the server REST API (the only proviso here is that the `REST` API must still behave as it currently does).
+
+The candidate is also expected to add a `COMMENTS.md` file to document:
+
+- What kind of changes or refactoring were made to the code?
+- Why were these changes required?
+- Any more improvements in the code you couldn't do but you think it is important and should be done?
 
 **NOTE:** The `com.sonalake.refactoring.e2e.TestServer` test is provided to act as a definition of the REST API - this test **MUST NOT** be changed
 
@@ -158,10 +165,3 @@ Response
   }
 ]
 ```
-
-## Bonus
-
-    - What kind of changes or refactoring you did in the code?
-    - Why was this refactoring required?
-    - Any more improvements in the code you couldn't do but you think it is important and should be done?
-
