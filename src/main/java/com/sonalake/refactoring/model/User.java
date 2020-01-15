@@ -1,4 +1,4 @@
-package com.sonalake.refactoring;
+package com.sonalake.refactoring.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,4 +10,9 @@ public class User {
     @GeneratedValue
     public Long id;
     public String name;
+
+  public User(long id, String name) {
+    this.id = id;
+    this.name = name;
+  }
 }
