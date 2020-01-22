@@ -450,7 +450,8 @@ public class TestServer {
     }
 
     private HttpResponse<String> givenTaskCreated(String user, String task, String date) throws UnirestException {
-        HttpResponse<String> result = Unirest.post("http://localhost:" + serverPort + "/tasks")
+      // set header to json to use Dto as request body --> use annotations in dto class
+        HttpResponse<String> result = Unirest.post("http://localhost:" + serverPort + "/tasks").header("Content-Type", "application/json")
                 .body(task(user, task, date)).asObject(String.class);
 
         return result;
