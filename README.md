@@ -11,7 +11,7 @@ A _very_ poor implementation of a tasks list where
 - The code implemented without using the features available in the libraries being used.
 
 
-There is, however, a set of `e2e` tests in `com.sonalake.refactoring.e2e.TestServer` that
+There is, however, a set of `e2e` tests in `TestServer` that
  
  - Start the spring boot server
  - Run tests to:
@@ -38,7 +38,7 @@ The candidate is also expected to add a `COMMENTS.md` file to document:
 - Why were these changes required?
 - Any more improvements in the code you couldn't do but you think it is important and should be done?
 
-**NOTE:** The `com.sonalake.refactoring.e2e.TestServer` test is provided to act as a definition of the REST API - this test **MUST NOT** be changed
+**NOTE:** The `TestServer` test is provided to act as a definition of the REST API - this test **MUST NOT** be changed
 
 ## What is the API
 
