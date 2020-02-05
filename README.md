@@ -1,46 +1,5 @@
-# Refactoring test
-
-A simple coding test
-
-## What is provided
-
-A _very_ poor implementation of a tasks list where 
-
-
-- The code is all munged into one place
-- The code implemented without using the features available in the libraries being used.
-
-
-There is, however, a set of `e2e` tests in `TestServer` that
- 
- - Start the spring boot server
- - Run tests to:
-    - Create some tasks
-    - Confirm users are created as expected
-    - Get tasks by id, and search by name
-    - Mark tasks as done
-    
-    
-## What is expected of the candidate?
-
-The candidate willreview the code and make _any_ changes to the `src/main` classes that 
-they see fit to make.
-
-This includes, but is not limited to:
-
-- Including any new libraries that would make things easier
-- Changing any of the existing classes
-- Changing the `java` implementation of the server REST API (the only proviso here is that the `REST` API must still behave as it currently does).
-
-The candidate is also expected to add a `COMMENTS.md` file to document:
-
-- What kind of changes or refactoring were made to the code?
-- Why were these changes required?
-- Any more improvements in the code you couldn't do but you think it is important and should be done?
-
-**NOTE:** The `TestServer` test is provided to act as a definition of the REST API - this test **MUST NOT** be changed
-
-## What is the API
+# Task Demo Application
+## API
 
 The purpose of the API is to manage tasks in a team's task list. The APIs are:
 
